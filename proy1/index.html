@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icono a utilizar  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Proyecto HTML</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Título PRINCIPALde la Página</h1>
+        <p>valor semántico más alto dentro de los títulos, 
+            se intenta poner uno solo en toda la página
+        </p>
+        <h2>Título secundario</h2>
+        <!--coentario con crtl +} -->
+        <h4> siguiente título</h4>
+        <h5> titulo 5to en jerarquia</h5>
+        <h6>título menos importante en cuestión semántica</h6>
+    </header>
+        <h3 style="text-align: center;">estilos en línea</h3>
+    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <strong>ESTUDIAR</strong>
+    <em>Ser tolerante ala frustración</em>
+    <small> es más pequeño</small>
+    <del>texto tachado</del>
+    <ins>subrayado esto</ins>
+    <sub>subindices</sub>H <sub>2</sub>O
+    <sup>super indices</sup>A <sup>2</sup> <mark> etiqueta marcado</mark>
+    <!-- citas y referencias -->
+     <p>steve jobs : <q>lo que separa a emprendedores...</q></p>
+     
+     <abbr title="hyper text markup language">HTML</abbr>   y CSS
+    <p> para remitente usamos address -_> <address>Escrito por <br> BSAS <br></address></p>
+    <bdo dir="rtl">el texto saldrá al revez</bdo>
+
+    <!-- Links -->
+     <!-- url absolutas webs extermas --> 
+      <a href="http://www.google.com.ar" target="_blank"> Google</a>
+        <!-- url relativas navegar adentro de nuestro proyecto --> 
+         <a href="carpeta-interna/archivo-interno.html">Ir a Archivo</a> <br>
+          <!-- mailto para enviar correos -->
+           <a href="mailto:tomas.elusto@gmail.com">Enviar Correo</a> 
+    <!-- imagenes -->
+     <!-- src es source y alt es titulo alternativo para manejar la accesibilidad -->
+     <img src="https://media.es.wired.com/photos/650b2a2e72d73ca3bd5ef0cc/16:9/w_2560%2Cc_limit/Business-OpenAI-Dall-E-3-heart.jpg" alt=" imagen" width="100px">
+    <a href="https:/portal.mecon.gob.ar"> <img src="carpeta-interna/img.webp" alt="imagen" width="200px"></a>
+
+    <h2>tablas en html</h2>
+        <table> 
+            <colgroup>
+                <col span="1" style="background-color: aquamarine;">
+            </colgroup>
+            <tr> 
+                <th> Nombre</th>
+                <th> Apellido</th>
+                <th> Rol</th>
+                <!-- colspan nos ayuda a extender horizontalmente las columnas-->
+                 <!-- rowspan es lo mismo que colspan -->
+            </tr>
+            <tr>
+                <td>info1</td>
+                <td>info2</td>
+                <td>info3</td>
+                
+            </tr>
+            <tr>
+                <td>info1</td>
+                <td>info2</td>
+                <td>info3</td>
+                
+            </tr>
+            <tr>
+                <td>info1</td>
+                <td>info2</td>
+                <td>info3</td>
+                
+            </tr>
+        </table>
+
+        <h2>LISTAS DESORDENADAS</h2>
+        <ul>
+            <!-- unorder list sin orden-->
+            <li>obj1</li>
+            <li>obj2</li>
+            <li>obj2</li>
+        </ul>
+        <h2>LISTAS ORDENADAS</h2>
+        <ol start="10">>
+            <!-- orderer list -->
+             <li>despertar</li>
+             <li>desayunar</li>
+             <li>ir a trabajar</li>
+        </ol>
+        <!-- div para lógica de negocio -->
+            <div style="background-color: aqua;">
+                <h2>titulo tema 1</h2>
+                <p>sobre tema 1</p>
+                <span><b>INFO RELEVANTE,</b></span>
+            </div>
+            <div style="background-color: blueviolet;">
+                <h2>titulo tema 2</h2>
+                <p>sobre tema 2</p>
+            </div>
+         <h2>FORMULARIO</h2>
+         <form>
+            <!-- por default viene el action vacio y el mètodo en GET en el form. action es la url donde recibe en el backend para procesar  -->
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre">
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido">
+            <br>
+            <label for="empleado">Empleado</label>
+            <input type="radio" name="situaciòn laboral" id="empleado">
+            <label for="desempleado">Desempleado</label>
+            <input type="radio" name="situaciòn laboral" id="desempleado">
+            <label for="en búsqueda">En búsqueda activa</label>
+            <input type="radio" name="situaciòn laboral" id="búsqueda">
+            <br>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="tecnologías" id="html" value="1">
+            <label for="javascript">JAVASCRIT</label>
+            <input type="checkbox" name="tecnologías" id="javascript"value="2">
+            <label for="react">REACT</label>
+            <input type="checkbox" name="tecnologías" id="react" value="3">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="tecnologías" id="css" value="4">
+            <!-- input type submit -->
+             <br>
+             <input type="submit" value="Enviar">
+             <!-- textarea -->
+              <br>
+              <label for="motivo">Motivo</label>
+              <textarea name="motivo" id="motivo" rows="10" cols="100"></textarea>
+         </form>       
+
+    </body>
+</html>
