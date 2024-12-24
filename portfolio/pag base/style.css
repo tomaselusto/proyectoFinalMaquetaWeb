@@ -53,6 +53,7 @@ header{
     font-size: 45px;
      z-index: 101; /*para que este sobre el header */
     cursor: pointer;/*para que aparezca la manito */
+    display:none;
  }
 #menuToggle{
     display: none; /*no quiero que se vez el checkbox*/
@@ -228,6 +229,10 @@ section{
         display: block;
         margin: 3px 0;
 
+    }
+
+    .navlist.open{
+        right: 0;
     }
     #menuToggle:checked + label.menuAccion + ul{
         right: 0;
